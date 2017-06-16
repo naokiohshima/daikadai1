@@ -12,10 +12,13 @@
   <header>
     <ul>
       <li><%= link_to "トップページ", root_path %></li>
-      <li><%= link_to "ツイートする", tweets_path %></li>
+      <li><%= link_to "ツイート一覧", tweets_path %></li>
+      <li><%= link_to "ツイートする", new_tweet_path %></li>
     </ul>
   </header>
 <%= yield %>
-
+  <footer>
+    <p>tweeter風アプリ</p>
+  </footer>
 </body>
 </html>
